@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head> 
+        
+        <title>E-News</title>
+            <meta charset="utf-8">        
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        
+        </head>
+    <header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+             <a class="navbar-brand" mb-0 href="enews.html">E-News</a>
+             
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Logar</a>  
+                </li>
+              </ul>
+          
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+            
+             <div class="collapse navbar-collapse" id="navbarSite">
+                                                                   
+              <form class="form-inline">
+                <input class="form-control mt-2 mb-2 ml-2 mr-2" list="historico" type="search" placeholder="Buscar">
+                <button class="btn btn-dark" type="submit">Pesquisar</button>    
+                  
+                    <datalist id="historico">
+                        <option value="LOL"></option>
+                        <option value="CSGO"></option>
+                        <option value="Fortnite"></option> 
+                    </datalist>
+                  
+              </form>
+          </div>
+        </nav></header>
+        <body>
+            
+            
+            
+            <div class="container">
+                        
+                <div class="sidebar sidebar-1">
+                    <h1 class="text">Log in</h1>
+                    
+                    <input id="name" class="bricks-form__input required js-text js-field-name" name="name" type="text" data-use-type="STRING" placeholder="E-mail" required="required">
+                    
+                    <input id="password" class="bricks-form__input required js-text js-field-name" name="name" type="password" data-use-type="STRING" placeholder="Senha" required="required">
+                </div>
+                
+                <div>
+                    <a href="recuperasenha.html">
+                Esqueceu sua senha?
+                    </a>
+                </div>
+                
+                <button id="login" class="login-button">
+                    Logar
+                </button>
+                                
+                <p class="text">
+                    Não se cadastrou ainda?                
+
+                <button id="myBtn" href="cadastro.html">Clique aqui!</button>
+                
+                <div id="myModal" class="modal">
+
+  
+                    <!-- Conteudo da janela -->
+  
+                    <div class="modal-content">
+    
+                        <span class="close">&times;</span>
+    
+                        <h1 class="text">Cadastro</h1>
+                                        
+                        <input id="mail" class="bricks-form__input required js-text js-field-name" name="name" type="text" data-use-type="STRING" placeholder="E-mail" required="required">
+                                        
+                        <input id="name" class="bricks-form__input required js-text js-field-name" name="name" type="text" data-use-type="STRING" placeholder="Usuário" required="required">
+                        
+                        <input id="password" class="bricks-form__input required js-text js-field-name" name="name" type="password" data-use-type="STRING" placeholder="Senha" required="required">
+
+                        <input id="confirmpassword" class="bricks-form__input required js-text js-field-name" name="name" type="password" data-use-type="STRING" placeholder="Confirmar senha" required="required">
+
+                
+                    
+                        <button id="login" class="login-button" href="logoff.html">
+                        Cadastrar-se
+                        </button>
+                </div>
+                            
+                </div>
+            </div>
+    </body>
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+          
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
